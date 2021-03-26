@@ -1,7 +1,7 @@
 # Forge-API-Documentation
-Minecraft is written in Java. One way to mod minecraft is to use Forge API to interact with Minecraft's native codes. To understand these API's, I compiled the latest Forge Mod on my computer and generated HTML documentation pages using javadoc
+Minecraft is written in Java. One way to mod minecraft is to use Forge API to interact with Minecraft's native codes. To understand these API's, I compiled the latest Forge Mod on my computer and generated HTML documentation pages using javadoc.
 
-[Version 1.16.5-36.1.2](https://ziyuanzhao2000.github.io/Forge-API-Documentation/javadoc/)
+Latest Forge [Version 1.16.5-36.1.2](https://ziyuanzhao2000.github.io/Forge-API-Documentation/javadoc/)
 
 
 By the way, you may be interested in generating these API documentation pages for yourself because Forge updates rather quickly over the years, and some keywords or methods in one version may be changed in the next. This is not too hard. First you need to know how to set up modding environment on your PC. Download Ecllipse or IntelliJ. I used IntelliJ. Then clone the version of Forge you need from Git. There will be build.gradle file in the unzipped folder. Use that to create a new project, and allow some time for the workspace to be set properly. Then execute commands: first ./gradlew genIntellijRuns within the IDE environment. This sets up run configuration and download additional assets. Think like this: Forge interacts with native Minecraft codes, but the copy we cloned from Git does not necessarily have the relevant codes, so we need to download additional stuff. Wait for upto 15 minutes for the download to complete. Then execute ./gradlew setup to setup the work space.
